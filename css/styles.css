@@ -437,3 +437,15 @@ header h1 {
     /*padding: 0 .5em;*/
   }
 }
+
+/* --- Footer --- */
+footer {
+  padding: 100px 0;
+  background-color: rgb(69,65,51);
+}
+
+footer h1 {
+  font-family: 'Sacramento', cursive;
+  color: #fff;
+  text-align: center;
+}
