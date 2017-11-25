@@ -1,0 +1,439 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: rgb(97,87,69);
+  margin: 0;
+  font-family: 'Mukta Vaani', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+  color: rgb(69,65,51);
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* --- Header --- */
+
+.home-hero {
+  background-image: url(../img/header-img.jpg);
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: 50% 0;
+  transition: 0s linear;
+  transition-property: background-position;
+  padding: 13em 0;
+  padding-left: 1em;
+  height: 100vh;
+}
+
+.home-hero h1 {
+  color: #fff;
+  font-size: 30px;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+header h1 {
+  font-family: 'Sacramento', cursive;
+  color: #fff;
+  font-size: 40px;
+  position: absolute;
+  padding: 30px 80px;
+}
+
+@media (min-width: 375px) {
+  .home-hero {
+    padding: 16em 0;
+    padding-left: 2em;
+  }
+
+  .home-hero h1 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .home-hero {
+    padding-right: 40%;
+    padding-left: 5em;
+  }
+
+  .home-hero h1 {
+    font-size: 50px;
+  }
+}
+
+/* --- Container --- */
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* --- Intro --- */
+
+/*.intro {
+  margin-bottom: 0;
+}*/
+
+.intro h2 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.primary,
+.secondary {
+  margin-bottom: -100px;
+}
+
+.desc-one,
+.desc-two {
+  background-color: #fff;
+  padding: 25px;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.pic-one {
+  margin-top: 100px;
+}
+
+.desc-one h2,
+.desc-two h2 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.story-info-left,
+.story-info-right {
+  line-height: 1.4;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.about h2,
+.menu h2 {
+  font-size: 20px;
+}
+
+@media (min-width: 740px) {
+  .story-info-left,
+  .story-info-right {
+    line-height: 1.4;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    width: 50%;
+    float: left;
+    padding: 0 1em;
+  }
+
+  .pic-one img {
+    width: 60%;
+    float: left;
+    margin-top: 100px;
+    margin-left: 50px;
+  }
+
+  .pic-two img {
+    width: 60%;
+    float: right;
+    margin-top: 100px;
+    margin-right: 50px;
+  }
+
+  .desc-one {
+    margin-top: 250px;
+    left: 350px;
+  }
+
+  .desc-two {
+    margin-top: 350px;
+    left: 150px;
+  }
+
+  .desc-one,
+  .desc-two {
+    position: absolute;
+    width: 40%;
+    background-color: #fff;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.1);
+  }
+
+  .desc-one h2,
+  .desc-two h2 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 998px) {
+  .intro {
+    margin-top: 50px;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .intro h2 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .story-info-left,
+  .story-info-right {
+    line-height: 1.4;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    width: 50%;
+    float: left;
+    padding: 0 1em;
+  }
+
+  .story-info-left p,
+  .story-info-right p {
+    font-size: 16px;
+  }
+
+  .pic-one img {
+    width: 60%;
+    float: left;
+    margin-top: 100px;
+    margin-left: 50px;
+  }
+
+  .pic-two img {
+    width: 60%;
+    float: right;
+    margin-top: 100px;
+    margin-right: 50px;
+  }
+
+  .desc-one {
+    margin-top: 350px;
+    left: 650px;
+  }
+
+  .desc-two {
+    margin-top: 600px;
+    left: 150px;
+  }
+
+  .desc-one,
+  .desc-two {
+    position: absolute;
+    width: 40%;
+    background-color: #fff;
+    padding: 100px 75px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.1);
+  }
+
+  .desc-one h2,
+  .desc-two h2 {
+    font-size: 30px;
+  }
+}
+
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* --- About --- */
+
+
+/* --- Menu --- */
+.menu-title {
+  background: url(../img/menu-sm.jpg) no-repeat center;
+  background-size: cover;
+  padding: 7em 0;
+}
+
+.menu-title h1 {
+  color: #fff;
+  text-align: center;
+}
+
+.menu {
+  font-family: 'Roboto', sans-serif;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.menu h3,
+.menu h4 {
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+}
+
+.menu h3 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.menu h3,
+.menu h4 {
+  margin-bottom: 10px;
+}
+
+.appetisers,
+.dinner,
+.dessert {
+  margin-bottom: 50px;
+}
+
+.underline {
+  border: 2px solid rgb(97,87,69);
+  width: 30px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.item-1,
+.item-2,
+.item-3,
+.item-4,
+.item-5,
+.item-6,
+.item-7,
+.item-8,
+.item-9,
+.item-10,
+.item-11,
+.item-12,
+.item-13,
+.item-14,
+.item-15,
+.item-16,
+.item-17,
+.item-18 {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 640px) {
+  .menu {
+    width: 100%;
+  }
+
+  .item-1,
+  .item-2,
+  .item-3,
+  .item-4,
+  .item-5,
+  .item-6,
+  .item-7,
+  .item-8,
+  .item-9,
+  .item-10,
+  .item-11,
+  .item-12,
+  .item-13,
+  .item-14,
+  .item-15,
+  .item-16,
+  .item-17,
+  .item-18 {
+    margin-bottom: 20px;
+    width: 50%;
+    float: left;
+    padding: 0 .5em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .menu-title {
+    background: url(../img/menu.jpg) no-repeat center;
+    background-size: cover;
+    padding: 13em 0;
+  }
+
+  .menu-title h1 {
+    font-size: 60px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu {
+    font-family: 'Roboto', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+
+  .menu h3,
+  .menu h4 {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .menu p {
+    font-size: 16px;
+  }
+
+  .menu h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .menu h3,
+  .menu h4 {
+    margin-bottom: 10px;
+  }
+
+  .appetisers,
+  .dinner,
+  .dessert {
+    margin-bottom: 50px;
+  }
+
+  .menu-title h1 {
+    color: #fff;
+    padding: 15px;
+  }
+
+  .underline {
+    border: 2px solid black;
+    width: 30px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .item-1,
+  .item-2,
+  .item-3,
+  .item-4,
+  .item-5,
+  .item-6,
+  .item-7,
+  .item-8,
+  .item-9,
+  .item-10,
+  .item-11,
+  .item-12,
+  .item-13,
+  .item-14,
+  .item-15,
+  .item-16,
+  .item-17,
+  .item-18 {
+    margin-bottom: 40px;
+    width: 33%;
+    float: left;
+    /*padding: 0 .5em;*/
+  }
+}
